@@ -232,8 +232,8 @@ a:hover::after { width: 100%; }
 
 .ellipse-right-light {
     position: absolute;
-    width: 691px;
-    height: 691px;
+    width: 680px;
+    height: 680px;
     background: #FFDD94;
     filter: blur(250px);
     bottom: 0;
@@ -244,8 +244,8 @@ a:hover::after { width: 100%; }
     position: relative;
     box-sizing: border-box;
     border-radius: 50%;
-    width: 830px;
-    height: 830px; 
+    width: 800px;
+    height: 800px; 
 }
 
 .ellipse-main-border {
@@ -270,10 +270,10 @@ a:hover::after { width: 100%; }
 .ellipse-light {
     position:absolute;
     box-sizing: border-box;
-    width: 100%;
-    height: 100%;
+    width: 40%;
+    height: 40%;
     background: #FFDD94;
-    filter: blur(250px);
+    filter: blur(230px);
     margin: auto;
     top: 0%;
 }
