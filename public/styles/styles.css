@@ -684,3 +684,49 @@ a:hover::after {
     align-items: flex-start;
     justify-content: space-between;
 }
+
+.cart {
+    position: relative;
+}
+
+.card-dropdown {
+    cursor: pointer;
+    position: relative;
+}
+
+.cart-popup {
+    box-sizing: border-box;
+    /* opacity: 0; */
+    transition: opacity 150ms ease-in-out;
+    position: absolute;
+    width: 350px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 99;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    top: 60px;
+    transform: translateX(-50%);
+    /* pointer-events: none; */
+    padding: 15px;
+}
+
+.cart-popup.visible {
+    opacity: 1;
+}
+
+.cart-popup-item-price {
+    padding-right: 10px;
+}
+
+.cart-popup-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding: 8px;
+}
+
+.cart-popup-item:last-child {
+    border-bottom: none;
+}

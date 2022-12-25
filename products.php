@@ -1,6 +1,6 @@
 <?php require_once 'includes/header.php' ?>
-<?php require_once 'includes/layouts/header.php' ?>
 <?php require_once 'includes/connection.php' ?>
+<?php require_once 'includes/layouts/header.php' ?>
 
 <?php 
     if (isset($_GET['action']) && $_GET['action'] == 'add') {
@@ -63,7 +63,7 @@
 	       $result = $connection->query('SELECT * FROM products ORDER BY name ASC'); 
 	 
            if($result){
-                foreach($result as $row){
+                foreach($result as $row) {
                     echo '
                             <div class="animal-card">
                             <div class="items-catalog-container">
