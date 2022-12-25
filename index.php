@@ -1,4 +1,6 @@
-<?php @require_once('includes/header.php') ?>
+<?php 
+@require_once('includes/header.php') 
+?>
 
 <main class="main-block">
     <nav class="header">
@@ -8,7 +10,7 @@
         </div>
         <menu class="navigation">
             <dt class="active-nav"><a href="">Главная</a></dt>
-            <dt class=""><a href="">Друзья</a></dt>
+            <dt class=""><a href="./products.php">Друзья</a></dt>
             <dt class=""><a href="">О сервисе</a></dt>
             <dt class=""><a href="">Контакты</a></dt>
         </menu>
