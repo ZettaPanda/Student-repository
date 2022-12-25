@@ -18,6 +18,11 @@
                     "quantity" => 1, 
                     "price" => $row_s['price'] 
                 );
+
+                header('Location: products.php');
+                unset($_GET['action']);
+
+
             } else { 
 				$message="This product id invalid"; 
 			} 
@@ -72,15 +77,16 @@
                                         <h7>'. $row['age'] .'</h7>
                                     </div>
                                     <div>лет</div>
+                                </div>
+                                <div class="animal-img-card-helper">
                                     <img src="'. $row['img_url'] .'" alt="" class="img-up-card">
                                 </div>
-                                <div class="animal-img-card-helper"></div>
                                 <div class="down-info-items-catalog">
                                     <h4>'. $row['name'] .'</h4>
                                     <h6 class="text-500">'. $row['description'] .'</h6>
                                     <div class="down-info-items-catalog-footer">
                                         <h2 class="price">'. $row['price'] .' р.</h2>
-                                        <a href="products.php?action=add&id='. $row['id'] .'" class="add-cart-btn">+</a>
+                                        <a href="?action=add&id='. $row['id'] .'" class="add-cart-btn">+</a>
                                     </div>
                                 </div>
                             </div>

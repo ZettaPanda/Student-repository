@@ -696,7 +696,7 @@ a:hover::after {
 
 .cart-popup {
     box-sizing: border-box;
-    /* opacity: 0; */
+    opacity: 0;
     transition: opacity 150ms ease-in-out;
     position: absolute;
     width: 350px;
@@ -707,12 +707,13 @@ a:hover::after {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     top: 60px;
     transform: translateX(-50%);
-    /* pointer-events: none; */
+    pointer-events: none;
     padding: 15px;
 }
 
 .cart-popup.visible {
     opacity: 1;
+    pointer-events: all;
 }
 
 .cart-popup-item-price {
