@@ -1,4 +1,4 @@
 # Student-repository
 Скачайте проект
-Устновите расширение для VSCode GoToLive
+Устновите расширение для VSCode Live Server
 Запустите
